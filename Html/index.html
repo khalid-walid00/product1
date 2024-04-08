@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style/css.css">
+
+</head>
+
+<body class=" overflow-x-hidden">
+  <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
+    <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+    <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden w-8/12">
+      <nav class="lg:flex  justify-between ">
+        <a style="color:#024160;" class="font-bold" href="index.html">Company Profile</a>
+        <a style="color:#024160;" class="font-bold" href="About.html">About us</a>
+        <a style="color:#024160;" class="font-bold" href="Inspections & Certifications.html">Inspections &
+          Certifications</a>
+        <a style="color:#024160;" class="font-bold" href="Training_services.html">Training</a>
+        <a style="color:#024160;" class="font-bold" href="Approvals.html">Approval</a>
+        <a style="color:#024160;" class="font-bold" href="Gallery.html">Gallery</a>
+        <a style="color:#024160;" class="font-bold" href="Contact.html">Contact us</a>
+      </nav>
+
+      <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+        <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
+          <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+              class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+          <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+              class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+          <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+              class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+          <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+              class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+        class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+    </div>
+  </div>
+  <div
+    class=" fixed opacity-0 z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 right-0 rounded-l-lg bg-gray-300"
+    id="slidebar">
+    <div class=" w-11/12 flex justify-between pt-6">
+      <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+          class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+      <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+          class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+      <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+          class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+      <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+          class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a class="font-bold w-full  text-white flex" href="index.html">Company Profile</a>
+    </div>
+    <div class="my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a class="font-bold w-full  text-white flex" href="About.html">About us</a>
+
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a st class="font-bold w-full text-white  flex" href="Inspections & Certifications.html">Inspections &
+        Certifications</a>
+
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a st class="font-bold w-full text-white  flex" href="Training_services.html">Training</a>
+
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a st class="font-bold w-full text-white  flex" href="Approvals.html">Approval</a>
+
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a st class="font-bold w-full text-white  flex" href="Gallery.html">Gallery</a>
+
+    </div>
+    <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+      <a st class="font-bold w-full text-white  flex" href="Contact.html">Contact us</a>
+
+    </div>
+  </div>
+  <section id="section2">
+    <div class="  bg-[#EDEDED] session1 h-max ">
+      <div class=" flex justify-center">
+        <img src="../images/yellow_gas.jpeg" class="rounded-2xl w-10/12" style="" alt="gas">
+      </div>
+      <div class=" flex justify-center my-2 ">
+        <div class=" relative w-10/12 opacity-90 flex mb-2 flex-col-reverse p-4"
+          style="background-color: #cecece; border-radius: 40px;">
+          <div class="font-bold lg:ml-20">
+            <span class="  font-extrabold "> Arabian Bureau of Services</span>
+
+            established on 1993 as a 3rd party inspection company
+            for the thorough examination of Lifting Appliances,
+            Lifting Gears, Earthmoving Machineries, Industrial
+            Trucks & QHSE training and consultancy. During this
+            period ABoS had grown and expanded in the U.A.E
+            market and established a high strength relationship
+            among its customers whose trust by its judgment.
+            Our judgment against any equipment, machine or
+            accessory gear gives priority of preventing
+            equipment, machine, accessory gear, operators,
+            labors, environment and the property from any
+            accident, deterioration, damage, harm, fatal injuries or death. For more than two decade of operations,
+            ABoS has gained much experience in the UAE and has preserved its commitment to provide quality inspection
+            service to all our clients. Qualified and experienced staffs were retained to ensure a continuity of
+            quality inspection & training services.
+          </div>
+          <div
+            class="lg:absolute lg:top-4  top-48 -left-14 opacity-50 lg:w-32 lg:h-44 md:h-36 sm:h-36 h-36 w-full flex flex-col  justify-center items-center"
+            style="border-radius: 20px;background-color: #11B5EA;">
+          </div>
+          <div
+            class="absolute  flex flex-col lg:-left-10 md:top-10 md:left-80 sm:top-10 sm:left-60 left-24 leftsmall top-8 font-bold">
+            <i class="fa-solid fa-book-bookmark text-5xl  text-center" style="color: #082B39;"></i>
+            <ul class=" text-xl">
+              <li class=" text-center">Company</li>
+              <li class=" text-center">Profile</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section2">
+    <div class="  h-max ">
+
+      <div class=" flex justify-center my-2 ">
+        <div class=" relative w-10/12 opacity-90 flex flex-col-reverse p-4"
+          style="background-color: #EEECEC; border-radius: 40px;">
+          <div class="font-bold  lg:ml-20">
+            <span class="font-extrabold ">ABoS’s</span>main core businesses are in the following items
+            <ul class=" list-decimal pl-6">
+              <li>Inspection, testing and examination of lifting appliances and lifting gears.</li>
+              <li>Inspection, testing and examination of Earth moving machinery, Industrial</li>
+              <li>Examination the competency of the above mentioned equipment and machines operators and conducting safe
+                use of the equipment training courses for them.</li>
+              <li>Conducting safety & Vocational training courses.</li>
+            </ul>
+            <span class=" font-extrabold ">ABoS’s</span> is doing consultation on Quality Management Systems,
+            Environmental Management System and Safety Management System training & Consultancy.
+          </div>
+          <div class=" flex justify-center">
+            <div
+              class="lg:absolute lg:top-4 top-48 -left-16 opacity-50 lg:w-36 lg:h-48 w-full  md:h-40 sm:h-40 h-40 flex flex-col  justify-center items-center"
+              style="border-radius: 20px;background-color: #11B5EA;">
+
+            </div>
+          </div>
+          <div
+            class="absolute  flex flex-col lg:-left-10 md:top-10 md:left-80 sm:top-10 sm:left-60 left-28 leftsmall top-8 font-bold">
+            <i class="fa-solid fa-briefcase text-5xl  text-center" style="color: #082B39;"></i>
+            <ul class=" text-xl">
+              <li class=" text-center">Main</li>
+              <li class=" text-center">Business</li>
+              <li class=" text-center">Interest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="section3">
+     <div class=" flex flex-col   h-max  lg:px-20 px-2 " style="background-color:#EDEDED;">
+      <div class=" lg:flex flex-col lg:flex-row justify-center ">
+
+        <div class="lg:max-w-max pt-8 lg:p-0 flex  self-center flex-col">
+          <div class=" flex justify-center ">   <img src="../images/submarine.jpeg" class="lg:w-60  h-52  rounded-3xl" alt="">
+</div>
+          <div class=" text-3xl font-bold text-center " style="color: #024160;">Organization</div>
+        </div>
+
+        <div class="lg:w-9/12 mt-5 mx-2">
+           <div class="font-bold">
+            <span class="font-extrabold">ABoS</span>
+            is continually maintaining a highly qualified inspection 
+            and consultancy team, employing the latest technical 
+            expertise and paraphernalia, stressing utmost importance in safety,
+             environment, quality, and timely completion task, and
+              complying with all local & international regulations.
+           </div>
+           <div class="font-bold my-5">
+            <span class="font-extrabold">ABoS</span>
+            is continually maintaining a highly qualified inspection 
+            and consultancy team, employing the latest technical 
+            expertise and paraphernalia, stressing utmost importance in safety,
+             environment, quality, and timely completion task, and
+              complying with all local & international regulations.
+           </div>
+           <div class="font-bold">
+            <span class="font-extrabold">ABoS</span>
+            is providing inspection services 
+            according to proven methods for inspection based on guidelines
+             and Standard Operating Procedure. The Inspection and consultancy 
+             team is well organized by our Technical Manager & Training Manager
+              and doing the task as per his authorization. is providing inspection
+               services according to proven methods for inspection based on guidelines and Standard 
+               Operating Procedure. The Inspection and consultancy team is
+             well organized by our Technical Manager & Training Manager and doing the task as per his authorization.
+           </div>
+        </div>
+       
+      </div> 
+      <div class=" flex justify-center">
+      <div class="m-5 w-10/12  border-b-2 border-dotted" style="border-color: #B4B4B4;">
+      </div>
+    </div>
+      <div class=" lg:flex lg:flex-row justify-between ">
+         <div class=" lg:w-3/12 lg:px-3 ">
+          <div class=" flex justify-center">
+            <img src="../images/krane.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
+           </div>
+           <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Office facilities</div>
+           <div class="font-bold">
+            <div class=" text-center font-extrabold">
+              ABOS’s Abu Dhabi office 
+            </div>
+            <div class=" pl-5 lg:p-0">
+              located in the heart of the city & the operations will be handled at Mussafah offices to serve the clients at anytime during the business
+               hours. The communication
+                between the departments and personals are established through phone, e-mails, & verbal conversations.
+            </div>
+            <div class="mt-4 pl-5 lg:p-0">
+              All the Certificates and reports are generated by the engineers to avoid delays & errors to ensure the trust of the customer
+            </div>
+           </div>
+          </div>
+          <div class=" lg:w-3/12 lg:px-3  ">
+            <div class=" flex justify-center">
+              <img src="../images/green worker.jpeg" class="w-60 h-52  rounded-3xl" alt="abos">
+             </div>
+             <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Work Experience</div>
+             <div class="font-bold  pl-5 lg:p-0">
+                We ABoS work with various prestigious projects with well reputed companies in UAE such as ADNATCO, NMDC, SMG, IMCC group (GPC, IMAC, GSME, CIC, ADCE), GS Engineering, Hyundai, Galfar Engineering, AL Sahraa. We can listed various projects which we handled by us on request
+              </div>
+            </div>
+            <div class=" lg:w-3/12 lg:px-3 ">
+              <div class=" flex justify-center">
+                <img src="../images/green_crane.png" class="w-60 h-52  rounded-3xl" alt="abos">
+               </div>
+               <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Quality & HSE</div>
+               <div class="font-bold  pl-5 lg:p-0">
+              
+                  ABoS is committed with High level of standardization with Quality & HSE. Our Company is certified by LEEA & ENAS for our inspection 
+                  activities as per iso17020:2012 & our EHSMS system is recently certified by RINA Services for ISO14001:2004: ISO 18001:2007.
+                
+               </div>
+              </div>
+              <div class=" lg:w-3/12 lg:px-3 ">
+                <div class=" flex justify-center">
+                  <img src="../images/etihad.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
+                 </div>
+                 <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Office facilities</div>
+                 <div class="font-bold">
+                  <div class=" font-extrabold text-center">
+                    ABOS’s Abu Dhabi office 
+                  </div>
+                  <div class=" pl-5 lg:p-0">
+                    located in the heart of the city & the operations will be handled at Mussafah offices to serve the clients at anytime during the business
+                     hours. The communication
+                      between the departments and personals are established through phone, e-mails, & verbal conversations.
+                  </div>
+                  <div class="mt-4  pl-5 lg:p-0">
+                    All the Certificates and reports are generated by the engineers to avoid delays & errors to ensure the trust of the customer
+                  </div>
+                 </div>
+                </div>
+      </div>
+     </div>
+   </section>
+   <footer>
+     <div class="h-max lg:p-20" style="background-color: #024160;">
+     <div class=" flex  justify-around flex-wrap">
+      <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+        <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+          <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+        </div>
+         <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+      </div>
+      </div>
+    <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+      <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+      <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+      </div>
+       <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+      <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+      <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+    </div>
+    </div>
+     </div>
+     <div class=" lg:flex flex-row justify-between mt-5">
+      <div class=" flex">
+      <div>
+        <img src="../images/white_logo.png" class="lg:w-60 w-52 h-52  rounded-3xl" alt="logo">
+      </div>
+
+
+      <div>
+
+        <div class=" flex items-center text-white lg:text-2xl my-2">
+          <i  class="fa-solid fa-location-dot mx-2"></i>
+         <div>
+          Arabian Bureau of Services
+         </div>
+        </div>
+
+        <div class=" flex items-center text-white lg:text-2xl my-2">
+          <i  class="fa-solid fa-envelope-open mx-2"></i>
+         <div>
+          P.O.Box 47133 - Musaffah
+                 </div>
+        </div>
+
+        <div class=" flex items-center text-white lg:text-2xl my-2">
+          <i  class="fa-solid fa-phone mx-2"></i>
+         <div>
+          Tel: +971 2 5511520
+                 </div>
+        </div>
+
+        <div class=" flex items-center text-white lg:text-2xl my-2">
+          <i  class="fa-solid fa-envelope mx-2"></i>
+         <div>
+          Email: abos@abosad.com
+         </div>
+        </div>
+
+        
+        
+      </div>
+     </div>
+        <div class="flex lg:justify-between justify-around lg:w-3/12 w-8/12/12 items-end">
+          <a href="https://linkedin.com"><i class="fa-brands text-white lg:text-3xl text-xl fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/"><i class="fa-brands text-white lg:text-3xl text-xl fa-instagram"></i></a>
+          <a href="https://x.com"><i class="fa-brands text-white lg:text-3xl text-xl fa-x-twitter"></i></a>
+          <a href="https://facebook.com"><i class="fa-brands text-white lg:text-3xl text-xl fa-facebook-f"></i></a>
+        </div>
+     </div>
+    </div>
+   </footer>
+
+  <script src="../js/slideBar.js"></script>
+</body>
+
+</html>

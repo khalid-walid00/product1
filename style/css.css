@@ -1,0 +1,42 @@
+.colorIcon{
+}
+.session1{
+    background-color: 
+    #EDEDED;
+     border-radius: 87px;
+}
+.fontbold{
+    font-weight: 700;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+     .leftsmall{
+         left:  8rem  !important;
+     }
+}
+@media (min-width: 501px) and (max-width: 640px) {
+    .leftsmall{
+        left:  12rem  !important;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+    .leftsmall{
+        left:  15rem  !important;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .firstabout{
+        padding-left:10px ;
+        padding-right:10px ;
+    }
+    .textfirstabout{
+        width: 60%;
+    }
+}
+.color-blue-1000{
+color: #082B39 !important;
+}
+
+.border-4xl{
+    border-radius: 40px;
+}

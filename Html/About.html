@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/css.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+    <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
+        <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+        <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden w-8/12">
+            <nav class="lg:flex  justify-between ">
+                <a style="color:#024160;" class="font-bold" href="index.html">Company Profile</a>
+                <a style="color:#024160;" class="font-bold" href="About.html">About us</a>
+                <a style="color:#024160;" class="font-bold" href="Inspections & Certifications.html">Inspections &
+                    Certifications</a>
+                <a style="color:#024160;" class="font-bold" href="Training_services.html">Training</a>
+                <a style="color:#024160;" class="font-bold" href="Approvals.html">Approval</a>
+                <a style="color:#024160;" class="font-bold" href="Gallery.html">Gallery</a>
+                <a style="color:#024160;" class="font-bold" href="Contact.html">Contact us</a>
+            </nav>
+
+            <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+                <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
+                    <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                    <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                    <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                    <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+                class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+        </div>
+    </div>
+    <div class=" fixed opacity-0 z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 right-0 rounded-l-lg bg-gray-300"
+        id="slidebar">
+        <div class=" w-11/12 flex justify-between pt-6">
+            <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+            <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+            <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+            <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a class="font-bold w-full  text-white flex" href="index.html">Company Profile</a>
+        </div>
+        <div class="my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a class="font-bold w-full  text-white flex" href="About.html">About us</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Inspections & Certifications.html">Inspections &
+                Certifications</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Training_services.html">Training</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Approvals.html">Approval</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Gallery.html">Gallery</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Contact.html">Contact us</a>
+
+        </div>
+    </div>
+    <section>
+        <div class=" border-4xl h-max" style="background-color: #EDEDED;">
+            <div class=" lg:flex lg:flex-row-reverse flex-col lg:px-20 firstabout">
+                <div class="lg:w-6/12 pl-3 pt-1 relative">
+                    <img src="../images/shipment.jpeg" alt="Logo" class="w-full border-4xl">
+                    <ul
+                        class=" list-disc grid grid-cols-6 absolute top-0 lg:-right-9 -right-0  w-40 text-white text-xl">
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                    </ul>
+                </div>
+                <div
+                    class=" lg:flex md:flex sm:flex flex-col md:flex-row sm:flex-row textfirstabout md:w-12/12 lg:w-6/12">
+                    <div class="lg:w-4/12 flex justify-center md:mx-2 items-center">
+                        <div class="  rounded-3xl lg:h-52 md:h-52 sm:h-52 h-36 lg:w-36 sm:w-36 w-full my-2 md:w-36 flex flex-col justify-center"
+                            style="background-color: #11b4ea9d;">
+                            <i class="fa-solid fa-book-bookmark text-5xl  text-center" style="color: #082B39;"></i>
+                            <ul class="text-center text-2xl color-blue-1000 font-bold">
+                                <li>Comany</li>
+                                <li>Profile</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" lg:w-8/12 mt-3 text-lg p-2 relative">
+                        Quality & sustainable life style
+                        is essential part of our life. To Ensure the same perfection & unique decision are very
+                        important.
+                        The current industry is required the quality & certification on everything which ever we dealt
+                        with
+                        it.
+                        <br>
+                        With the above idea Arabian Bureau of Services established on 1993 to ensure the quality &
+                        impartial
+                        inspection as well as
+                        the effective training services for its customer. The team is well organized to ensure its
+                        services
+                        providing to the customer effectively & most efficiently.
+                        <br>
+                        We registered with all the major oil companies which is providing the services to the nation. We
+                        still looking forward to register with international organization to ensure the compliance of
+                        the
+                        requirements to the international level.
+                        <ul class=" list-disc grid grid-cols-6 absolute top-0 right-0  w-40 text-white text-xl">
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                            <div>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--breack line-->
+            <div class=" flex justify-center">
+                <div class="m-5 w-8/12  border-b-2 border-dotted" style="border-color: #B4B4B4;">
+                </div>
+            </div>
+            <!--breack line-->
+
+            <div class=" lg:flex sm:flex-col lg:flex-row  md:flex-col flex-col  lg:justify-between lg:px-20 px-5">
+                <div class=" flex justify-center ">
+                    <div class=" lg:w-9/12 md:w-4/12 sm:w-8/12 flex justify-center">
+                        <img src="../images/saleh.jpeg" class="lg:w-full md:w-11/12 w-6/12" alt="saleh">
+                    </div>
+                </div>
+                <div class="color-blue-1000 lg:w-4/12 my-2 lg:m-0 flex justify-center">
+                    <i class="fa-solid fa-book-bookmark lg:text-6xl text-4xl m-2 text-center "></i>
+                    <div class=" text-2xl">
+                        <spa>Chairman’s</spa>
+                        <br>
+                        <spa>Message</spa>
+                    </div>
+
+                </div>
+
+                <div class=" lg:w-6/12 text-xl">
+                    Under his excellent leadership, <span class=" font-extrabold">ABOS</span> makes major breakthrough
+                    in the field of safety inspection and testing
+                    undertaking many prestigious jobs with a consistent professional approach. He always insists on high
+                    quality
+                    services and pursues all possible ways to ensure customer satisfaction without compromising on
+                    safety and
+                    quality.
+                </div>
+            </div>
+            <!--breack line-->
+            <div class=" flex justify-center">
+                <div class="m-5 w-8/12  border-b-2 border-dotted" style="border-color: #B4B4B4;">
+                </div>
+            </div>
+            <!--breack line-->
+
+            <!-- <div class=" lg:flex justify-between px-20">
+                <div class=" w-3/12">
+                    <img src="../images/abosad.png" class="w-full" alt="saleh">
+                </div>
+                <div class="color-blue-1000 w-4/12 flex justify-center">
+                    <i class="fa-solid fa-book-bookmark text-6xl m-2 text-center "></i>
+                    <div class=" text-2xl">
+                        <spa>Managing</spa>
+                        <br>
+                        <spa>Director’s</spa>
+                        <br>
+                        <spa>Message</spa>
+                    </div>
+                </div>
+
+                <div class=" w-6/12 text-xl">
+                    Everyone want to live safely without any harm in their life by means of their or others actions. We
+                    ABoS in the field of inspection & training certification body for oil & gas as well as construction
+                    industries to provide better judgments’ to ensure the safety.
+                    The core team of ABoS has essential knowledge in the field of inspection for lifting equipments as
+                    per the local & international standards. Since we had the professional team which is having hands on
+                    experience & knowledge in the field of lifting equipment inspection services.
+                    We have the confident that our team is equipped with such capabilities and serve the nation (UAE) to
+                    ensure zero harm to the environment & people of the nation.
+                </div>
+            </div> -->
+
+            <div class=" lg:flex sm:flex-col lg:flex-row  md:flex-col flex-col  lg:justify-between lg:px-20 px-5">
+                <div class=" flex justify-center ">
+                    <div class=" lg:w-9/12 md:w-4/12 sm:w-8/12 flex justify-center">
+                        <img src="../images/abosad.png" class="lg:w-full md:w-11/12 w-6/12" alt="saleh">
+                    </div>
+                </div>
+                <div class="color-blue-1000 lg:w-4/12 my-2 lg:m-0 flex justify-center items-center lg:items-start">
+                    <i class="fa-solid fa-book-bookmark lg:text-6xl text-4xl m-2 text-center "></i>
+                    <div class=" text-2xl">
+                        <spa>Managing</spa>
+                        <br>
+                        <spa>Director’s</spa>
+                        <br>
+                        <spa>Message</spa>
+                    </div>
+
+                </div>
+
+                <div class=" lg:w-6/12 text-xl">
+                    Under his excellent leadership, <span class=" font-extrabold">ABOS</span> makes major breakthrough
+                    in the field of safety inspection and testing
+                    undertaking many prestigious jobs with a consistent professional approach. He always insists on high
+                    quality
+                    services and pursues all possible ways to ensure customer satisfaction without compromising on
+                    safety and
+                    quality.
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="h-max lg:p-20" style="background-color: #024160;">
+            <div class=" flex  justify-around flex-wrap">
+                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+                    </div>
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+                    </div>
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" lg:flex flex-row justify-between mt-5">
+                <div class=" flex">
+                    <div>
+                        <img src="../images/white_logo.png" class="lg:w-60 w-52 h-52  rounded-3xl" alt="logo">
+                    </div>
+
+
+                    <div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-location-dot mx-2"></i>
+                            <div>
+                                Arabian Bureau of Services
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-envelope-open mx-2"></i>
+                            <div>
+                                P.O.Box 47133 - Musaffah
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-phone mx-2"></i>
+                            <div>
+                                Tel: +971 2 5511520
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-envelope mx-2"></i>
+                            <div>
+                                Email: abos@abosad.com
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="flex lg:justify-between justify-around lg:w-3/12 w-8/12/12 items-end">
+                    <a href="https://linkedin.com"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-instagram"></i></a>
+                    <a href="https://x.com"><i class="fa-brands text-white lg:text-3xl text-xl fa-x-twitter"></i></a>
+                    <a href="https://facebook.com"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/slideBar.js"></script>
+</body>
+
+</html>
