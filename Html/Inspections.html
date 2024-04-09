@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/css.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+    <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
+        <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+        <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden w-8/12">
+            <nav class="lg:flex  justify-between ">
+                <a style="color:#024160;" class="font-bold" href="index.html">Company Profile</a>
+                <a style="color:#024160;" class="font-bold" href="About.html">About us</a>
+                <a style="color:#024160;" class="font-bold" href="#">Inspections &
+                    Certifications</a>
+                <a style="color:#024160;" class="font-bold" href="Training.html">Training</a>
+                <a style="color:#024160;" class="font-bold" href="Approvals.html">Approval</a>
+                <a style="color:#024160;" class="font-bold" href="Gallery.html">Gallery</a>
+                <a style="color:#024160;" class="font-bold" href="Contact.html">Contact us</a>
+            </nav>
+
+            <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+                <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
+                    <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                    <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                    <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                    <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                            class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+                class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+        </div>
+    </div>
+    <div class=" fixed opacity-0 z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 right-0 rounded-l-lg bg-gray-300"
+        id="slidebar">
+        <div class=" w-11/12 flex justify-between pt-6">
+            <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+            <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+            <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+            <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                    class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a class="font-bold w-full  text-white flex" href="index.html">Company Profile</a>
+        </div>
+        <div class="my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a class="font-bold w-full  text-white flex" href="About.html">About us</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="#">Inspections &
+                Certifications</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Training.html">Training</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Approvals.html">Approval</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Gallery.html">Gallery</a>
+
+        </div>
+        <div class=" my-6 bg-blue-500  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+            <a st class="font-bold w-full text-white  flex" href="Contact.html">Contact us</a>
+
+        </div>
+    </div>
+
+
+    <section>
+        <div class="session1 sectioninspection opacity-85 lg:px-20 md:px-4 sm:px-3 px-2">
+            <div class=" relative ">
+                <img src="../images/green_crane.png" alt="Logo" class="w-full imginspection border-4xl">
+                <div
+                    class=" absolute top-5 left-10 lg:text-3xl md:text-2xl sm:text-xl text-sm text-white font-extrabold ">
+                    INDUSTRY EXPERTS IN<br> KEEPING OUR CUSTOMERS<br> SAFE & COMPLIANT
+                </div>
+                <ul
+                    class=" list-disc grid grid-cols-6 absolute lg:top-2 lg:-right-6 md:top-2 md:-right-6 sm:top-2 sm:-right-6 top-20 -right-2  w-40 text-white text-xl">
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="relative bottom-16 flex justify-center lg:px-8 md:px-4 sm:px-2 px-1">
+
+                <div class=" shadow-lg border-4xl p-5 lg:text-xl md:text-xl sm:text-sm text-sm  font-medium "
+                    style="background-color: #DEDEDE;">
+                    <p>Arabian Bureau Of Services established in 1993 and providing Engineering Testing, Inspection,
+                        Certification of Lifting Equipment,
+                        and Training Services. Our objective is to keep our customers both safe and compliant with the
+                        relevant legislation and standards.</p>
+                    <p>
+                        Arabian Bureau Of Services are experts in both keeping customer-owned equipment and people both
+                        safe and compliant
+                        within the workplace. Equipment in the workplace includes lifting accessories and equipment,
+                        plant and access
+                        equipment, pressure systems, working platforms, fall protections and local exhaust ventilation
+                        systems. Our Electrical Testing division provides Electrical Testing, Fixed Wire Testing, and
+                        other electrical testing services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="lg:pl-24 lg:pr-28 mt-2">
+            <div class=" lg:flex md:flex sm:flex ">
+
+
+                <div class="lg:w-10/12 md:w-9/12 sm:9/12 w-11/12 flex flex-col  relative left-5">
+                    <div class="flex lg:justify-evenly md:justify-evenly sm:justify-evenly justify-around items-center rounded-3xl h-40 lg:text-3xl md:text-2xl sm:text-xl text-lg font-bold color-blue-1000"
+                        style="background-color: #11b4eaa2;">
+                        <i class="fa-solid fa-book-bookmark mx-3 text-5xl"></i>
+                        TESTING, INSPECTION, &<br> CERTIFICATION SERVICES
+                    </div>
+
+                    <div class=" font-semibold md:w-11/12 sm:w-11/12">
+                        Under the Abu Dhabi Municipality (ADM / OSHAD) & Ministry of Industry and Advanced Technology
+                        (MOIAT)/Emirates National Accreditation Systems (ENAS) there are various regulations which
+                        require employers to ensure that equipment is safe to use, fit for purpose, and thoroughly
+                        examined by a competent body.
+                        Our team of highly qualified engineers provide thorough examination and certification services
+                        on all types of equipment including:
+                    </div>
+                </div>
+
+
+                <div class="lg:w-2/12 md:w-3/12 imgboxing sm:w-3/12 z-10">
+                    <img src="../images/boxing.jpeg" class=" w-full h-80  rounded-3xl" alt="logo">
+                </div>
+
+            </div>
+
+            <div class=" flex justify-center mt-5">
+                <div class="lg:flex md:flex sm:flex lg:w-11/12 md:w-11/12 sm:w-full pl-8 justify-around">
+                    <div class="">
+                        <ul class="list-disc h-40 flex flex-col justify-between lg:text-xl pr-4 font-semibold">
+                            <li>Cranes & Lifting Equipment and Accessories</li>
+                            <li>Elevators & Escalators</li>
+                            <li>Plant and Machinery</li>
+                            <li>Access Equipment and MEWPS</li>
+                            <li>Scaffolding & Working Platforms</li>
+                        </ul>
+
+                    </div>
+                    <div class="lg:m-0 md:m-0 sm:m-0 mt-2 ">
+                        <ul
+                            class="list-disc h-40 flex flex-col justify-between  w-max lg:text-xl text-end font-semibold">
+                            <li class="  max-w-max">Pressure Equipment’s</li>
+                            <li class="  max-w-max">Fall Protection</li>
+                            <li class="  max-w-max">Electrical Equipment’s &<br> Power Actuated Tools (PAT) Testing</li>
+                            <li class="  max-w-max">Access Equipment and MEWPS</li>
+                            <li class="  max-w-max">Local Exhaust Ventilation (LEV) systems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class=" relative session1 mt-28 flex justify-center h-52"
+            style="border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+            <img src="../images/pipe_yard.jpeg" class="w-11/12 relative -top-16 rounded-3xl h-64  " alt="logo">
+        </div>
+    </section>
+
+    <footer>
+        <div class="h-max lg:p-20" style="background-color: #024160;">
+            <div class=" flex  justify-around flex-wrap">
+                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+                    </div>
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
+                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+                    </div>
+                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
+                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" lg:flex flex-row justify-between mt-5">
+                <div class=" flex">
+                    <div>
+                        <img src="../images/white_logo.png" class="lg:w-60 w-52 h-52  rounded-3xl" alt="logo">
+                    </div>
+
+
+                    <div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-location-dot mx-2"></i>
+                            <div>
+                                Arabian Bureau of Services
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-envelope-open mx-2"></i>
+                            <div>
+                                P.O.Box 47133 - Musaffah
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-phone mx-2"></i>
+                            <div>
+                                Tel: +971 2 5511520
+                            </div>
+                        </div>
+
+                        <div class=" flex items-center text-white lg:text-2xl my-2">
+                            <i class="fa-solid fa-envelope mx-2"></i>
+                            <div>
+                                Email: abos@abosad.com
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="flex lg:justify-between justify-around lg:w-3/12 w-8/12/12 items-end">
+                    <a href="https://linkedin.com"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-instagram"></i></a>
+                    <a href="https://x.com"><i class="fa-brands text-white lg:text-3xl text-xl fa-x-twitter"></i></a>
+                    <a href="https://facebook.com"><i
+                            class="fa-brands text-white lg:text-3xl text-xl fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/slideBar.js"></script>
+</body>
+
+</html>
