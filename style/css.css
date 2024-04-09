@@ -11,28 +11,20 @@
 
 @media (min-width: 100px) and (max-width: 399px) {
  
-    .traning-secction-1-img{
-       height: 350px;
-   }
+   
 }
 @media (min-width: 400px) and (max-width: 500px) {
      .leftsmall{
          left:  8rem  !important;
      }
-     .traning-secction-1-img{
-        height: 550px;
-    }
+   
 }
 @media (min-width: 501px) and (max-width: 640px) {
     .leftsmall{
         left:  12rem  !important;
     }
-    .traning-secction-1-img{
-        height: 550px;
-    }
-    .traning-secction-1{
-        height: 1220px;
-    }
+
+  
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
@@ -42,23 +34,12 @@
     .imgboxing{
         width: 40%;
     
-      } .traning-secction-1{
-        height: 1220px !important;
-    }
-    .traning-secction-1-img{
-        height: 350px;
-    }
-    .ul-traning{
-        margin-top: 200px;
-    }
+      }
+
 }
 @media (min-width: 767px) and (max-width: 999px) {
-    .traning-secction-1{
-        height: 980px !important;
-    }
-    .traning-secction-1-img{
-        height: 450px;
-    }
+   
+
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
     .firstabout{
@@ -76,9 +57,7 @@
     width: 30%;
 
   }
-  .traning-secction-1-img{
-    height: 550px;
-}
+
   }
 @media (min-width: 1301px) and (max-width: 1500px) {
     .imginspection{
@@ -88,8 +67,11 @@
         height: 989px;
   
   }
-  .traning-secction-1-img{
-    height: 550px;
+  .first-contaner-traning{
+    height: 1053px
+}
+  .blue_work{
+    height: 513px;
 }
 }
 @media (min-width: 1501px) and (max-width: 2000px) {
@@ -97,16 +79,24 @@
         height: 817px !important;
     }
     .img-traning{
-        height: 817px !important;
+        height: 617px ;
     }
     .sectioninspection{
         height: 965px;
   
   }
-  .traning-secction-1-img{
-    height: 550px;
+  .first-contaner-traning{
+    height: 1053px
+}
+.blue_work{
+    height: 513px;
+    bottom: -2rem;
 }
 }
+.img-traning{
+    height: 580px ;
+}
+
 .color-blue-1000{
 color: #082B39 !important;
 }
@@ -114,6 +104,4 @@ color: #082B39 !important;
 .border-4xl{
     border-radius: 40px;
 }
-.traning-secction-1{
-    height: 1636px;
-}
+
