@@ -179,7 +179,9 @@
 .color-blue-1000{
 color: #082B39 !important;
 }
-
+.bg-blue-web{
+background-color: #0088b5 !important;
+}
 .border-4xl{
     border-radius: 40px;
 }
