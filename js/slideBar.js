@@ -1,8 +1,8 @@
 function toggleFunction() {
     var slidebar = document.getElementById("slidebar");
-    if (slidebar.style.opacity == "0") {
-      slidebar.style.opacity = "1";
+    if (slidebar.style.right == "-14rem") {
+      slidebar.style.right = "0";
     } else {
-      slidebar.style.opacity = "0";
+      slidebar.style.right = "-14rem";
     }
   }
