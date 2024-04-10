@@ -19,6 +19,9 @@
         height: 580px;
         top: 390px;
     }
+    .section2-galley{
+        height: 1148px;
+    }
 }
 @media (min-width: 400px) and (max-width: 500px) {
      .leftsmall{
@@ -31,6 +34,9 @@
         position: absolute;
         height: 580px;
         top: 400px;
+    }
+    .section2-galley{
+        height: 1280px;
     }
 }
 @media (min-width: 501px) and (max-width: 640px) {
@@ -45,6 +51,9 @@
         position: absolute;
         height: 580px;
         top: 480px;
+    }
+    .section2-galley{
+        height: 1350px;
     }
 }
 
@@ -64,6 +73,9 @@
         height: 580px;
         top: 468px;
     }
+    .section2-galley{
+        height: 600px;
+    }
 }
 @media (min-width: 768px) and (max-width: 799px) {
     .selection-approval{
@@ -74,7 +86,9 @@
         height: 580px;
         top: 450px;
     }
-
+    .section2-galley{
+        height: 600px;
+    }
 }
 @media (min-width: 800px) and (max-width: 999px) {
     .selection-approval{
@@ -85,7 +99,9 @@
         height: 580px;
         top: 540px;
     }
-
+    .section2-galley{
+        height: 650px;
+    }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
     .firstabout{
@@ -177,7 +193,7 @@
 }
 
 .color-blue-1000{
-color: #082B39 !important;
+color: #024160 !important;
 }
 .bg-blue-web{
 background-color: #0088b5 !important;
