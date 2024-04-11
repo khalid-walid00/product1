@@ -14,7 +14,7 @@ const English = {
       "twitter": "https://x.com",
       "facebook": "https://facebook.com"
     },
-    "sections": {
+    "index": {
       "section1": {
         "heading": "Arabian Bureau of Services",
         "description": "established on 1993 as a 3rd party inspection company for the thorough examination of Lifting Appliances, Lifting Gears, Earthmoving Machineries, Industrial Trucks & QHSE training and consultancy. During this period ABoS had grown and expanded in the U.A.E market and established a high strength relationship among its customers whose trust by its judgment. Our judgment against any equipment, machine or accessory gear gives priority of preventing equipment, machine, accessory gear, operators, labors, environment and the property from any accident, deterioration, damage, harm, fatal injuries or death. For more than two decade of operations, ABoS has gained much experience in the UAE and has preserved its commitment to provide quality inspection service to all our clients. Qualified and experienced staffs were retained to ensure a continuity of quality inspection & training services."
@@ -49,6 +49,12 @@ const English = {
         ]
       }
     },
+    "about": {
+      "section1": {
+        "heading": "المكتب العربي للخدمات",
+         "description":"Quality & sustainable life style is essential part of our life. To Ensure the same perfection & unique decision are very important. The current industry is required the quality & certification on everything which ever we dealt with it.With the above idea Arabian Bureau of Services established on 1993 to ensure the quality & impartial inspection as well as the effective training services for its customer. The team is well organized to ensure its services providing to the customer effectively & most efficiently.We registered with all the major oil companies which is providing the services to the nation. We still looking forward to register with international organization to ensure the compliance of the requirements to the international level."
+      }
+     },
     "footer": {
       "links": {
         "training": "Training",

@@ -1,5 +1,7 @@
 function toggleTranslate(lang) {
   localStorage.setItem("lang", lang);
+
+  ///////////////////navbar//////////////////////////
   var btnTranslate = document.getElementById("translate");
   var translateslide = document.getElementById("translate-slide");
   var profile = document.getElementById("profile");
@@ -16,6 +18,7 @@ function toggleTranslate(lang) {
   var Approvalslide = document.getElementById("approval-slide");
   var Galleryslide = document.getElementById("gallery-slide");
   var Contactslide = document.getElementById("contact-slide");
+  ///////////////////padge 1////////////////////////////
   var p1 = document.getElementById("p1");
   var p2 = document.getElementById("p2");
   var p3 = document.getElementById("p3");
@@ -26,7 +29,12 @@ function toggleTranslate(lang) {
   var t3p2 = document.getElementById("t3-p2");
   var p3h = document.getElementById("p3-h");
   var p4 = document.getElementById("p4");
+  ///////////////////padge about////////////////////////////
+  var p1about = document.getElementById("p1about");
+  var p2about = document.getElementById("p2");
+  var p2about = document.getElementById("p2");
   if (lang == "ar") {
+    console.log(Arabic.about.section1.description)
       btnTranslate.style.transform = "translateX(2rem)";
       translateslide.style.transform = "translateX(2rem)";
       // Update content for Arabic
@@ -37,44 +45,44 @@ function toggleTranslate(lang) {
       approval.innerText = Approvalslide.innerText =  Arabic.navLinks.approval;
       gallery.innerText = Galleryslide.innerText = Arabic.navLinks.gallery;
       contact.innerText = Contactslide.innerText = Arabic.navLinks.contactUs;
-      p1.innerHTML =    `<div class="my-5 flex text-right">${Arabic.sections.section1.heading+" " } ${Arabic.sections.section1.description}</div>`
+      p1.innerHTML =    `<div class="my-5 flex text-right">${Arabic.index.section1.heading+" " } ${Arabic.index.section1.description}</div>`
       t1p1.innerText = 'الملف';
       t2p1.innerText = ' للشركه';
-      p2.innerHTML =`<div class="my-6 text-right"><span class="font-extrabold ">ABoS’s</span>${Arabic.sections.section2.heading}
+      p2.innerHTML =`<div class="my-6 text-right"><span class="font-extrabold ">ABoS’s</span>${Arabic.index.section2.heading}
       <ul class=" pl-6 flex-col  text-right">
-      <li>${Arabic.sections.section2.points[0]}</li>
-      <li>${Arabic.sections.section2.points[1]}</li>
-      <li>${Arabic.sections.section2.points[2]}</li>
-      <li>${Arabic.sections.section2.points[3]}</li>
+      <li>${Arabic.index.section2.points[0]}</li>
+      <li>${Arabic.index.section2.points[1]}</li>
+      <li>${Arabic.index.section2.points[2]}</li>
+      <li>${Arabic.index.section2.points[3]}</li>
     </ul>
     
       تقوم  بإجراء استشارات حول أنظمة إدارة الجودة ونظام الإدارة البيئية والتدريب والاستشارات على نظام إدارة السلامة <span class=" font-extrabold ">ABoS’s</span></div>`
       t1p2.innerText = 'اهتمام';
       t2p2.innerText = ' الأعمال';
       t3p2.innerText = ' الرئيسية';
-      p3h.innerText = Arabic.sections.section3.heading;
+      p3h.innerText = Arabic.index.section3.heading;
       p3.innerHTML = ` <div class="font-bold text-right">
-     ${Arabic.sections.section3.description1}
+     ${Arabic.index.section3.description1}
      </div>
      <div class="font-bold text-right my-5">
-      ${Arabic.sections.section3.description1}
+      ${Arabic.index.section3.description1}
      </div>
      <div class="font-bold text-right">
-      ${Arabic.sections.section3.description2}
+      ${Arabic.index.section3.description2}
      </div>`
      p4.innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
      <div class=" flex justify-center">
        <img src="../images/krane.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
       </div>
-      <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.sections.section3.subsections[0].title}</div>
+      <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.index.section3.subsections[0].title}</div>
       <div class="font-bold">
        <div class=" text-center text-xl font-extrabold">
       في ابو ظبي  Abos مكتب </div>
        <div class=" pl-5 lg:p-0 text-right">
-       ${Arabic.sections.section3.subsections[0].description1}
+       ${Arabic.index.section3.subsections[0].description1}
        </div>
        <div class="mt-4 pl-5 lg:p-0 text-right">
-       ${Arabic.sections.section3.subsections[0].description2}
+       ${Arabic.index.section3.subsections[0].description2}
        </div>
       </div>
      </div>
@@ -82,19 +90,19 @@ function toggleTranslate(lang) {
        <div class=" flex justify-center">
          <img src="../images/green worker.jpeg" class="w-60 h-52  rounded-3xl" alt="abos">
         </div>
-        <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.sections.section3.subsections[1].title}</div>
+        <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.index.section3.subsections[1].title}</div>
         <div class="font-bold  pl-5 lg:p-0 text-right">
-        ${Arabic.sections.section3.subsections[1].description}
+        ${Arabic.index.section3.subsections[1].description}
         </div>
        </div>
        <div class=" lg:w-3/12 lg:px-3 ">
          <div class=" flex justify-center">
            <img src="../images/green_crane.png" class="w-60 h-52  rounded-3xl" alt="abos">
           </div>
-          <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.sections.section3.subsections[2].title}</div>
+          <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${Arabic.index.section3.subsections[2].title}</div>
           <div class="font-bold  pl-5 lg:p-0 text-right">
          
-          ${Arabic.sections.section3.subsections[2].description}
+          ${Arabic.index.section3.subsections[2].description}
 
           </div>
          </div>
@@ -102,19 +110,20 @@ function toggleTranslate(lang) {
            <div class=" flex justify-center">
              <img src="../images/etihad.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
             </div>
-            <div class=" text-3xl font-bold text-center my-2" style="color: #024160;"> ${Arabic.sections.section3.subsections[0].title}</div>
+            <div class=" text-3xl font-bold text-center my-2" style="color: #024160;"> ${Arabic.index.section3.subsections[0].title}</div>
             <div class="font-bold">
             <div class=" text-center text-xl font-extrabold">
             في ابو ظبي  Abos مكتب </div>
              <div class=" pl-5 lg:p-0 text-right">
-             ${Arabic.sections.section3.subsections[0].description1}
+             ${Arabic.index.section3.subsections[0].description1}
 
              </div>
              <div class="mt-4  pl-5 lg:p-0 text-right">
-             ${Arabic.sections.section3.subsections[0].description2}
+             ${Arabic.index.section3.subsections[0].description2}
              </div>
             </div>
            </div>`
+    p1about.innerHTML= Arabic.about.section1.description;
   } else {
       btnTranslate.style.transform = "translateX(0rem)";
       translateslide.style.transform = "translateX(0rem)";
@@ -127,7 +136,7 @@ function toggleTranslate(lang) {
       approval.innerText = Approvalslide.innerText =  English.navLinks.approval;
       gallery.innerText = Galleryslide.innerText = English.navLinks.gallery;
       contact.innerText = Contactslide.innerText = English.navLinks.contactUs;
-      p1.innerHTML =` <span class="  font-extrabold ">${English.sections.section1.heading }</span>`+ English.sections.section1.description;
+      p1.innerHTML =` <span class="  font-extrabold ">${English.index.section1.heading }</span>`+ English.index.section1.description;
       t1p1.innerText = "Company";
       t2p1.innerText ="Profile"
       p2.innerHTML = `<span class="font-extrabold ">ABoS’s</span>main core businesses are in the following items
@@ -143,18 +152,18 @@ function toggleTranslate(lang) {
       t1p2.innerText = 'Main';
       t2p2.innerText = ' Business ';
       t3p2.innerText = ' Interest';
-      p3h.innerText = English.sections.section3.heading;
+      p3h.innerText = English.index.section3.heading;
       p3.innerHTML = ` <div class="font-bold">
       <span class="font-extrabold">ABoS</span>
-     ${English.sections.section3.description1}
+     ${English.index.section3.description1}
      </div>
      <div class="font-bold  my-5">
       <span class="font-extrabold">ABoS</span>
-      ${English.sections.section3.description1}
+      ${English.index.section3.description1}
      </div>
      <div class="font-bold ">
       <span class="font-extrabold">ABoS</span>
-      ${English.sections.section3.description2}
+      ${English.index.section3.description2}
      </div>`
 
      p4.innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
@@ -216,6 +225,9 @@ function toggleTranslate(lang) {
              </div>
             </div>
            </div>`
+
+     p1about.innerHTML= English.about.section1.description;
+
   }
 }
 
