@@ -12,140 +12,154 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
-        <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
-        <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
-            <nav class="lg:flex  justify-between ">
-                <a style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
-                <a style="color:#024160;" class="font-bold" href="./About.html">About us</a>
-                <a style="color:#024160;" class="font-bold" href="./Inspections.html">Inspections &
-                    Certifications</a>
-                <a style="color:#6c6d6e;" class="font-bold" href="#">Training</a>
-                <a style="color:#024160;" class="font-bold" href="./Approvals.html">Approval</a>
-                <a style="color:#024160;" class="font-bold" href="./Gallery.html">Gallery</a>
-                <a style="color:#024160;" class="font-bold" href="./Contact.html">Contact us</a>
-            </nav>
+    <header>
+        <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
+            <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+            <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
+                <nav class="lg:flex  justify-between ">
+                    <a style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
+                    <a style="color:#024160;" class="font-bold" href="./About.html">About us</a>
+                    <a style="color:#024160;" class="font-bold" href="./Inspections.html">Inspections &
+                        Certifications</a>
+                    <a style="color:#6c6d6e;" class="font-bold" href="#">Training</a>
+                    <a style="color:#024160;" class="font-bold" href="./Approvals.html">Approval</a>
+                    <a style="color:#024160;" class="font-bold" href="./Gallery.html">Gallery</a>
+                    <a style="color:#024160;" class="font-bold" href="./Contact.html">Contact us</a>
+                </nav>
 
-            <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
-                <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
-                    <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-                    <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-                    <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-                    <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+                    <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
+                        <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                        <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                        <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                        <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+                    class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+            </div>
         </div>
-        <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
-                class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+    </header>
+    <slider>
+        <div class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
+            id="slidebar">
+            <div class=" w-11/12 flex justify-between pt-6">
+                <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+            </div>
+
+            <div class="my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
+
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a class="font-bold w-full  text-white flex" href="./About.html">About us</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Inspections.html">Inspections &
+                    Certifications</a>
+
+            </div>
+            <div style="background-color:#034a90;"
+                class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="#">Training</a>
+
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
+
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Gallery.html">Gallery</a>
+
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Contact.html">Contact us</a>
+
+            </div>
         </div>
-    </div>
-    <div
-    class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
-    id="slidebar">
-    <div class=" w-11/12 flex justify-between pt-6">
-      <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-          class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-      <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-          class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-      <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-          class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-      <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-          class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
-    </div>
-   
-    <div class="my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
-
-    </div>
-    <div  class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-        <a class="font-bold w-full  text-white flex" href="./About.html">About us</a>
-      </div>
-    <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a st class="font-bold w-full text-white  flex" href="./Inspections.html">Inspections &
-        Certifications</a>
-
-    </div>
-    <div style="background-color:#034a90;" class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a st class="font-bold w-full text-white  flex" href="#">Training</a>
-
-    </div>
-    <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a st class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
-
-    </div>
-    <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a st class="font-bold w-full text-white  flex" href="./Gallery.html">Gallery</a>
-
-    </div>
-    <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-      <a st class="font-bold w-full text-white  flex" href="./Contact.html">Contact us</a>
-
-    </div>
-  </div>
+    </slider>
     <section>
         <div class="first-contaner-traning session1 pb-16 lg:p-0 md:pb-16 sm:pb-16">
             <div class="w-full flex justify-center relative">
-                <div class=" absolute top-2 lg:right-24 left-10 lg:text-4xl text-3xl font-bold color-blue-1000">TRAINING<br>SERVICES</div>
-              <img src="../images/scaffolding.jpeg" alt="Logo" class="img-traning h-5/6 border-4xl w-11/12">
-              <div class="absolute -bottom-24 flex justify-center px-8">
-              <div class=" w-11/12  shadow-lg border-4xl py-6 px-4 lg:text-2xl opacity-90 font-medium" style="background-color: #EDEDED;">Abu Dhabi Public Health Centre (ADPHC) & The Abu Dhabi Centre for 
-                Technical and Vocational Education and Training (ACTVET) requires all employers to provide 
-                suitable and relevant training within the work place to ensure that employees are able to work safely at all times.</div></div>
+                <div class=" absolute top-2 lg:right-24 left-10 lg:text-4xl text-3xl font-bold color-blue-1000">
+                    TRAINING<br>SERVICES</div>
+                <img src="../images/scaffolding.jpeg" alt="Logo" class="img-traning h-5/6 border-4xl w-11/12">
+                <div class="absolute -bottom-24 flex justify-center px-8">
+                    <div class=" w-11/12  shadow-lg border-4xl py-6 px-4 lg:text-2xl opacity-90 font-medium"
+                        style="background-color: #EDEDED;">Abu Dhabi Public Health Centre (ADPHC) & The Abu Dhabi Centre
+                        for
+                        Technical and Vocational Education and Training (ACTVET) requires all employers to provide
+                        suitable and relevant training within the work place to ensure that employees are able to work
+                        safely at all times.</div>
+                </div>
                 <ul
-                class=" list-disc grid grid-cols-6 absolute lg:top-2 lg:right-1/3 md:top-2 md:-right-0 sm:top-2 sm:-right-0 top-20 -right-0  w-40 text-white text-xl">
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </div>
-            </ul>
+                    class=" list-disc grid grid-cols-6 absolute lg:top-2 lg:right-1/3 md:top-2 md:-right-0 sm:top-2 sm:-right-0 top-20 -right-0  w-40 text-white text-xl">
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </ul>
             </div>
             <div class="flex lg:flex-row flex-col mt-40 justify-center">
-             <div class=" lg:w-11/12 flex lg:flex-row flex-col-reverse">
-                <div class="lg:w-6/12 px-8 lg:p-0  text-2xl">
-                       <p>Abu Dhabi Public Health Centre (ADPHC) & The Abu Dhabi Centre for Technical and Vocational Education and Training (ACTVET) requires all employers to provide suitable and relevant training within the work place to ensure that employees are able to work safely at all times.</p>
-                <p class=" mt-8">Our training division offers a wide range of accredited training courses covering the following categories:</p>
+                <div class=" lg:w-11/12 flex lg:flex-row flex-col-reverse">
+                    <div class="lg:w-6/12 px-8 lg:p-0  text-2xl">
+                        <p>Abu Dhabi Public Health Centre (ADPHC) & The Abu Dhabi Centre for Technical and Vocational
+                            Education and Training (ACTVET) requires all employers to provide suitable and relevant
+                            training within the work place to ensure that employees are able to work safely at all
+                            times.</p>
+                        <p class=" mt-8">Our training division offers a wide range of accredited training courses
+                            covering the following categories:</p>
+                    </div>
+                    <div class=" lg:w-6/12">
+                        <img src="../images/blue_worker.jpeg" alt="Logo"
+                            class="blue_work relative md:-bottom-0 border-4xl ">
+                    </div>
+
                 </div>
-                <div class=" lg:w-6/12">
-               <img src="../images/blue_worker.jpeg" alt="Logo" class="blue_work relative md:-bottom-0 border-4xl ">
-                </div>
-             
-             </div>
             </div>
             <div></div>
         </div>

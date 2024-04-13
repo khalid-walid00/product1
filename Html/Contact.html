@@ -12,85 +12,89 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
-        <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
-        <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
-            <nav class="lg:flex  justify-between ">
-                <a style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
-                <a style="color:#024160;" class="font-bold" href="./About.html">About us</a>
-                <a style="color:#024160;" class="font-bold" href="Inspections.html">Inspections &
-                    Certifications</a>
-                <a style="color:#024160;" class="font-bold" href="Training.html">Training</a>
-                <a style="color:#024160;" class="font-bold" href="Approvals.html">Approval</a>
-                <a style="color:#024160;" class="font-bold" href="Gallery.html">Gallery</a>
-                <a style="color:#6c6d6e;" class="font-bold" href="#">Contact us</a>
-            </nav>
+    <header>
+        <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
+            <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+            <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
+                <nav class="lg:flex  justify-between ">
+                    <a style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
+                    <a style="color:#024160;" class="font-bold" href="./About.html">About us</a>
+                    <a style="color:#024160;" class="font-bold" href="Inspections.html">Inspections &
+                        Certifications</a>
+                    <a style="color:#024160;" class="font-bold" href="Training.html">Training</a>
+                    <a style="color:#024160;" class="font-bold" href="Approvals.html">Approval</a>
+                    <a style="color:#024160;" class="font-bold" href="Gallery.html">Gallery</a>
+                    <a style="color:#6c6d6e;" class="font-bold" href="#">Contact us</a>
+                </nav>
 
-            <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
-                <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
-                    <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-                    <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-                    <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-                    <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+                    <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
+                        <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                        <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                        <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                        <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+                    class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+            </div>
         </div>
-        <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
-                class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
-        </div>
-    </div>
-    <div class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
-        id="slidebar">
-        <div class=" w-11/12 flex justify-between pt-6">
-            <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-            <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-            <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-            <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
-        </div>
+    </header>
+    <slider>
+        <div class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
+            id="slidebar">
+            <div class=" w-11/12 flex justify-between pt-6">
+                <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+            </div>
 
-        <div class="my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
+            <div class="my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
 
-        </div>
-        <div class=" my-6  bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a class="font-bold w-full  text-white flex" href="./About.html">About us</a>
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Inspections.html">Inspections &
-                Certifications</a>
+            </div>
+            <div class=" my-6  bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a class="font-bold w-full  text-white flex" href="./About.html">About us</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Inspections.html">Inspections &
+                    Certifications</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Training.html">Training</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Training.html">Training</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Gallery.html">Gallery</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="./Gallery.html">Gallery</a>
 
-        </div>
-        <div style="background-color:#034a90;"
-            class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="#">Contact us</a>
+            </div>
+            <div style="background-color:#034a90;"
+                class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a st class="font-bold w-full text-white  flex" href="#">Contact us</a>
 
+            </div>
         </div>
-    </div>
-
+    </slider>
     <section>
         <div class="session1 h-max lg:px-20 pt-5 pb-16 px-2 lg:pb-2">
-            <div class="lg:text-4xl md:text-2xl sm:text-2xl text-2xl color-blue-1000 flex lg:justify-start justify-center font-bold my-3">
-               <div class="w-max">For Enquire & Complaints</div> 
+            <div
+                class="lg:text-4xl md:text-2xl sm:text-2xl text-2xl color-blue-1000 flex lg:justify-start justify-center font-bold my-3">
+                <div class="w-max">For Enquire & Complaints</div>
             </div>
             <div class=" flex items-center lg:text-3xl font-medium my-2">
                 <i class="fa-solid fa-location-dot mx-2  color-blue-1000"></i>Arabian Bureau of Services
@@ -108,40 +112,41 @@
             <div class="lg:px-28">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.275437048005!2d54.357526065082595!3d24.47591162600584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e670e0bab5637%3A0x4aa3df304890081b!2sArabian%20Bureau%20Of%20Services!5e0!3m2!1sar!2seg!4v1712766505409!5m2!1sar!2seg"
-                   class="w-full" height="450" frameborder="0"  style="border:0;" allowfullscreen="" loading="lazy"
+                    class="w-full" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-             <!--breack line-->
-             <div class=" flex justify-center my-2">
+            <!--breack line-->
+            <div class=" flex justify-center my-2">
                 <div class="m-5 w-8/12  border-b-2 " style="border-color: #024160;">
                 </div>
             </div>
             <!--breack line-->
-            <div class="lg:text-4xl md:text-2xl sm:text-2xl text-2xl color-blue-1000 flex lg:justify-start justify-center font-bold my-3">
-                <div class="w-max">For Enquire & Complaints</div> 
-             </div>
-             <div class=" flex items-center lg:text-3xl font-medium my-2">
-                 <i class="fa-solid fa-location-dot mx-2  color-blue-1000"></i>Arabian Bureau of Services
-             </div>
-             <div class=" flex items-center lg:text-3xl font-medium my-2">
-                 <i class="fa-solid fa-envelope-open mx-2  color-blue-1000"></i>P.O.Box 47133 - Abu Dhabi
-             </div>
-             <div class=" flex items-center lg:text-3xl font-medium my-2">
-                 <i class="fa-solid fa-phone mx-2  color-blue-1000"></i>Tel: +971 2 6674166
-             </div>
-             <div class=" flex items-center lg:text-3xl font-medium my-2">
-                 <i class="fa-solid fa-envelope mx-2  color-blue-1000"></i>Email: abos@abosad.com
- 
-             </div>
-             <div class="lg:px-28">
-                 <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.275437048005!2d54.357526065082595!3d24.47591162600584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e670e0bab5637%3A0x4aa3df304890081b!2sArabian%20Bureau%20Of%20Services!5e0!3m2!1sar!2seg!4v1712766505409!5m2!1sar!2seg"
-                    class="w-full" height="450" frameborder="0"  style="border:0;" allowfullscreen="" loading="lazy"
-                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-             </div>
-         
+            <div
+                class="lg:text-4xl md:text-2xl sm:text-2xl text-2xl color-blue-1000 flex lg:justify-start justify-center font-bold my-3">
+                <div class="w-max">For Enquire & Complaints</div>
+            </div>
+            <div class=" flex items-center lg:text-3xl font-medium my-2">
+                <i class="fa-solid fa-location-dot mx-2  color-blue-1000"></i>Arabian Bureau of Services
+            </div>
+            <div class=" flex items-center lg:text-3xl font-medium my-2">
+                <i class="fa-solid fa-envelope-open mx-2  color-blue-1000"></i>P.O.Box 47133 - Abu Dhabi
+            </div>
+            <div class=" flex items-center lg:text-3xl font-medium my-2">
+                <i class="fa-solid fa-phone mx-2  color-blue-1000"></i>Tel: +971 2 6674166
+            </div>
+            <div class=" flex items-center lg:text-3xl font-medium my-2">
+                <i class="fa-solid fa-envelope mx-2  color-blue-1000"></i>Email: abos@abosad.com
+
+            </div>
+            <div class="lg:px-28">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.275437048005!2d54.357526065082595!3d24.47591162600584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e670e0bab5637%3A0x4aa3df304890081b!2sArabian%20Bureau%20Of%20Services!5e0!3m2!1sar!2seg!4v1712766505409!5m2!1sar!2seg"
+                    class="w-full" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
-        
+
     </section>
 
 
