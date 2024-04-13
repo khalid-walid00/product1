@@ -52,8 +52,16 @@ const English = {
     "about": {
       "section1": {
          "description":" Quality & sustainable life style is essential part of our life. To Ensure the same perfection & unique decision are very important. The current industry is required the quality & certification on everything which ever we dealt with it. <br> With the above idea Arabian Bureau of Services established on 1993 to ensure the quality & impartial inspection as well as the effective training services for its customer. The team is well organized to ensure its services providing to the customer effectively & most efficiently. <br> We registered with all the major oil companies which is providing the services to the nation. We still looking forward to register with international organization to ensure the compliance of the requirements to the international level."
+      },
+      "section2": {
+        "heading": "Arab Services Office",
+        "description":`<div class="text-xl">Under his excellent leadership, <span class="font-extrabold">ABOS</span> has made progress He is a pioneer in the field of safety inspection and testing, performing many prestigious jobs with a consistent professional approach. He always insists on providing high quality services and follows every possible way to ensure customer satisfaction without compromising on safety and quality.</div>`
+      },
+      section3:{
+        "heading":" Managing<br> Director’s<br>  Message",
+        "description":" Under his excellent leadership,<span class='font-extrabold'>ABOS</span> makes major breakthrough in the field of safety inspection and testing undertaking many prestigious jobs with a consistent professional approach. He always insists on high quality services and pursues all possible ways to ensure customer satisfaction without compromising on safety and quality."
       }
-     },
+      },
     "footer": {
       "links": {
         "training": "Training",

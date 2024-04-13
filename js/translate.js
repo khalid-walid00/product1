@@ -6,16 +6,27 @@ function toggleTranslate(lang) {
 
   if (lang == "ar") {
      $("#translate").style.transform = "translateX(2rem)";
-  $("#translate-slide").style.transform = "translateX(2rem)";
-  updateArabicForIndex($);
-  updateArabicForNavBarAndSlider($)
-} else {
-  $("#translate").style.transform = "translateX(0rem)";
-  $("#translate-slide").style.transform = "translateX(0rem)";
-  updateEnglishForIndex($);
-  updateEnglishForNavBarAndSlider($)
+     $("#translate-slide").style.transform = "translateX(2rem)";
+     updateArabic($);
+  } else {
+     $("#translate").style.transform = "translateX(0rem)";
+     $("#translate-slide").style.transform = "translateX(0rem)";
+     updateEnglish($);
   }
 }
+
+async function updateArabic($) {
+  updateArabicForNavBarAndSlider($);
+  updateArabicForAbout($);
+  updateArabicForIndex($);
+}
+
+async function updateEnglish($) {
+  updateEnglishForNavBarAndSlider($);
+  updateEnglishForAbout($);
+  updateEnglishForIndex($);
+}
+
  
 function updateArabicForNavBarAndSlider($) {
  // NavBar - SlideBar Update content for Arabic
@@ -238,3 +249,25 @@ function updateEnglishForIndex($) {
 
 }
 
+
+function updateArabicForAbout($) {
+  $("#p1-about").innerHTML = `<div class="flex text-right">${Arabic.about.section1.description}</div>`;
+  $("#p2-about").innerHTML = `<div class="flex text-right">${Arabic.about.section2.description}</div>`;
+  $("#t1-p1-about").innerText = "الملف";
+  $("#t2-p1-about").innerText = " للشركه";
+  $("#t1-p2-about").innerText = "رسالة";
+  $("#t2-p2-about").innerText = "رئيس مجلس الإدارة";
+  $("#p3-about").innerHTML = `<div class="flex text-right">${Arabic.about.section3.description}</div>`;
+  $("#ti-p3-about").innerHTML = `${Arabic.about.section3.heading}`;
+}
+function updateEnglishForAbout($) {
+  $("#p1-about").innerHTML = English.about.section1.description;
+  $("#p2-about").innerHTML = English.about.section2.description;
+  $("#t1-p1-about").innerText = "Comany";
+  $("#t2-p1-about").innerText = " Profile";
+  $("#t1-p2-about").innerText = "Chairman’s";
+  $("#t2-p2-about").innerText = "Message";
+  $("#p3-about").innerHTML = English.about.section3.description;
+  $("#ti-p3-about").innerHTML = `${English.about.section3.heading}`;
+  
+}
