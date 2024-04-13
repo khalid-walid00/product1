@@ -51,8 +51,7 @@ const English = {
     },
     "about": {
       "section1": {
-        "heading": "المكتب العربي للخدمات",
-         "description":"Quality & sustainable life style is essential part of our life. To Ensure the same perfection & unique decision are very important. The current industry is required the quality & certification on everything which ever we dealt with it.With the above idea Arabian Bureau of Services established on 1993 to ensure the quality & impartial inspection as well as the effective training services for its customer. The team is well organized to ensure its services providing to the customer effectively & most efficiently.We registered with all the major oil companies which is providing the services to the nation. We still looking forward to register with international organization to ensure the compliance of the requirements to the international level."
+         "description":"Quality & sustainable life styleis essential part of our life. To Ensure the same perfection & unique decision are veryimportant.The current industry is required the quality & certification on everything which ever we dealtwithit.<br>With the above idea Arabian Bureau of Services established on 1993 to ensure the quality &impartialinspection as well asthe effective training services for its customer. The team is well organized to ensure itsservicesproviding to the customer effectively & most efficiently.<br>We registered with all the major oil companies which is providing the services to the nation. Westill looking forward to register with international organization to ensure the compliance oftherequirements to the international level."
       }
      },
     "footer": {

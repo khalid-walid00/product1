@@ -1,54 +1,36 @@
 function toggleTranslate(lang) {
   localStorage.setItem("lang", lang);
-
-  ///////////////////navbar//////////////////////////
-  var btnTranslate = document.getElementById("translate");
-  var translateslide = document.getElementById("translate-slide");
-  var profile = document.getElementById("profile");
-  var about = document.getElementById("about");
-  var inspections = document.getElementById("inspections");
-  var training = document.getElementById("training");
-  var approval = document.getElementById("approval");
-  var gallery = document.getElementById("gallery");
-  var contact = document.getElementById("contact");
-  var profileslide = document.getElementById("profile-slide");
-  var Aboutslide = document.getElementById("about-slide");
-  var Inspectionsslide = document.getElementById("inspections-slide");
-  var Trainingslide = document.getElementById("training-slide");
-  var Approvalslide = document.getElementById("approval-slide");
-  var Galleryslide = document.getElementById("gallery-slide");
-  var Contactslide = document.getElementById("contact-slide");
-  ///////////////////padge 1////////////////////////////
-  var p1 = document.getElementById("p1");
-  var p2 = document.getElementById("p2");
-  var p3 = document.getElementById("p3");
-  var t1p1 = document.getElementById("t1-p1");
-  var t2p1 = document.getElementById("t2-p1");
-  var t1p2 = document.getElementById("t1-p2");
-  var t2p2 = document.getElementById("t2-p2");
-  var t3p2 = document.getElementById("t3-p2");
-  var p3h = document.getElementById("p3-h");
-  var p4 = document.getElementById("p4");
-  ///////////////////padge about////////////////////////////
-  var p1about = document.getElementById("p1about");
-  var p2about = document.getElementById("p2");
-  var p2about = document.getElementById("p2");
+  const $ = (selector) => document.querySelector(selector);
+ const langStorage=localStorage.getItem("lang");
+ console.log(langStorage);
   if (lang == "ar") {
-    console.log(Arabic.about.section1.description)
-      btnTranslate.style.transform = "translateX(2rem)";
-      translateslide.style.transform = "translateX(2rem)";
-      // Update content for Arabic
-      profileslide.innerText = profile.innerText = Arabic.navLinks.companyProfile;
-      about.innerText = Aboutslide.innerText = Arabic.navLinks.aboutUs;
-      inspections.innerText = Inspectionsslide.innerText =  Arabic.navLinks.inspectionsAndCertifications;
-      training.innerText = Trainingslide.innerText =  Arabic.navLinks.training;
-      approval.innerText = Approvalslide.innerText =  Arabic.navLinks.approval;
-      gallery.innerText = Galleryslide.innerText = Arabic.navLinks.gallery;
-      contact.innerText = Contactslide.innerText = Arabic.navLinks.contactUs;
-      p1.innerHTML =    `<div class="my-5 flex text-right">${Arabic.index.section1.heading+" " } ${Arabic.index.section1.description}</div>`
-      t1p1.innerText = 'الملف';
-      t2p1.innerText = ' للشركه';
-      p2.innerHTML =`<div class="my-6 text-right"><span class="font-extrabold ">ABoS’s</span>${Arabic.index.section2.heading}
+    console.log(Arabic.about.section1.description);
+    $("#translate").style.transform = "translateX(2rem)";
+    $("#translate-slide").style.transform = "translateX(2rem)";
+    // NavBar - SlideBar Update content for Arabic
+    $("#profile-slide").innerText = $("#profile").innerText =
+      Arabic.navLinks.companyProfile;
+    $("#about").innerText = $("#about-slide").innerText =
+      Arabic.navLinks.aboutUs;
+    $("#inspections").innerText = $("#inspections-slide").innerText =
+      Arabic.navLinks.inspectionsAndCertifications;
+    $("#training").innerText = $("#training-slide").innerText =
+      Arabic.navLinks.training;
+    $("#approval").innerText = $("#approval-slide").innerText =
+      Arabic.navLinks.approval;
+    $("#gallery").innerText = $("#gallery-slide").innerText =
+      Arabic.navLinks.gallery;
+    $("#contact").innerText = $("#contact-slide").innerText =
+      Arabic.navLinks.contactUs;
+
+    // index Update content for Arabic
+    $("#p1").innerHTML = `<div class="my-5 flex text-right">${Arabic.index.section1.heading + " "
+      } ${Arabic.index.section1.description}</div>`;
+    $("#t1-p1").innerText = "الملف";
+    $("#t2-p1").innerText = " للشركه";
+    $(
+      "#p2"
+    ).innerHTML = `<div class="my-6 text-right"><span class="font-extrabold ">ABoS’s</span>${Arabic.index.section2.heading}
       <ul class=" pl-6 flex-col  text-right">
       <li>${Arabic.index.section2.points[0]}</li>
       <li>${Arabic.index.section2.points[1]}</li>
@@ -56,12 +38,12 @@ function toggleTranslate(lang) {
       <li>${Arabic.index.section2.points[3]}</li>
     </ul>
     
-      تقوم  بإجراء استشارات حول أنظمة إدارة الجودة ونظام الإدارة البيئية والتدريب والاستشارات على نظام إدارة السلامة <span class=" font-extrabold ">ABoS’s</span></div>`
-      t1p2.innerText = 'اهتمام';
-      t2p2.innerText = ' الأعمال';
-      t3p2.innerText = ' الرئيسية';
-      p3h.innerText = Arabic.index.section3.heading;
-      p3.innerHTML = ` <div class="font-bold text-right">
+      تقوم  بإجراء استشارات حول أنظمة إدارة الجودة ونظام الإدارة البيئية والتدريب والاستشارات على نظام إدارة السلامة <span class=" font-extrabold ">ABoS’s</span></div>`;
+    $("#t2-p1").innerText = "اهتمام";
+    $("#t2-p2").innerText = " الأعمال";
+    $("#t3-p2").innerText = " الرئيسية";
+    $("#p3-h").innerText = Arabic.index.section3.heading;
+    $("#p3").innerHTML = ` <div class="font-bold text-right">
      ${Arabic.index.section3.description1}
      </div>
      <div class="font-bold text-right my-5">
@@ -69,8 +51,8 @@ function toggleTranslate(lang) {
      </div>
      <div class="font-bold text-right">
       ${Arabic.index.section3.description2}
-     </div>`
-     p4.innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
+     </div>`;
+    $("#p4").innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
      <div class=" flex justify-center">
        <img src="../images/krane.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
       </div>
@@ -122,24 +104,46 @@ function toggleTranslate(lang) {
              ${Arabic.index.section3.subsections[0].description2}
              </div>
             </div>
-           </div>`
-    p1about.innerHTML= Arabic.about.section1.description;
-  } else {
-      btnTranslate.style.transform = "translateX(0rem)";
-      translateslide.style.transform = "translateX(0rem)";
+           </div>`;
+    $("#p1-about").innerHTML = " Quality & sustainable life styleis essential part of our life. To Ensure the same perfection & unique decision are veryimportant.The current industry is required the quality & certification on everything which ever we dealt with it. <br>With the above idea Arabian Bureau of Services established on 1993 to ensure the quality & impartial inspection as well as the effective training services for its customer. The team is well organized to ensure its services providing to the customer effectively & most efficiently. <br> We registered with all the major oil companies which is providing the services to the nation. We still looking forward to register with international organization to ensure the compliance of the requirements to the international level."
+    $("#p2-about").innerHTML = "khalid"
 
-      // Update content for English
-      profileslide.innerText = profile.innerText = English.navLinks.companyProfile;
-      about.innerText = Aboutslide.innerText = English.navLinks.aboutUs;
-      inspections.innerText = Inspectionsslide.innerText =  English.navLinks.inspectionsAndCertifications;
-      training.innerText = Trainingslide.innerText =  English.navLinks.training;
-      approval.innerText = Approvalslide.innerText =  English.navLinks.approval;
-      gallery.innerText = Galleryslide.innerText = English.navLinks.gallery;
-      contact.innerText = Contactslide.innerText = English.navLinks.contactUs;
-      p1.innerHTML =` <span class="  font-extrabold ">${English.index.section1.heading }</span>`+ English.index.section1.description;
-      t1p1.innerText = "Company";
-      t2p1.innerText ="Profile"
-      p2.innerHTML = `<span class="font-extrabold ">ABoS’s</span>main core businesses are in the following items
+
+
+  } else {
+
+
+
+
+
+
+    $("#translate").style.transform = "translateX(0rem)";
+    $("#translate-slide").style.transform = "translateX(0rem)";
+    // NavBar - SlideBar Update content for English
+    $("#profile-slide").innerText = $("#profile").innerText =
+      English.navLinks.companyProfile;
+    $("#about").innerText = $("#about-slide").innerText =
+      English.navLinks.aboutUs;
+    $("#inspections").innerText = $("#inspections-slide").innerText =
+      English.navLinks.inspectionsAndCertifications;
+    $("#training").innerText = $("#training-slide").innerText =
+      English.navLinks.training;
+    $("#approval").innerText = $("#approval-slide").innerText =
+      English.navLinks.approval;
+    $("#gallery").innerText = $("#gallery-slide").innerText =
+      English.navLinks.gallery;
+    $("#contact").innerText = $("#contact-slide").innerText =
+      English.navLinks.contactUs;
+
+    // index Update content for English
+    $("#p1").innerHTML =
+      ` <span class="  font-extrabold ">${English.index.section1.heading}</span>` +
+      English.index.section1.description;
+    $("#t1-p1").innerText = "Company";
+    $("#t2-p1").innerText = "Profile";
+    $(
+      "#p2"
+    ).innerHTML = `<span class="font-extrabold ">ABoS’s</span>main core businesses are in the following items
       <ul class=" list-decimal pl-6">
         <li>Inspection, testing and examination of lifting appliances and lifting gears.</li>
         <li>Inspection, testing and examination of Earth moving machinery, Industrial</li>
@@ -148,12 +152,12 @@ function toggleTranslate(lang) {
         <li>Conducting safety & Vocational training courses.</li>
       </ul>
       <span class=" font-extrabold ">ABoS’s</span> is doing consultation on Quality Management Systems,
-      Environmental Management System and Safety Management System training & Consultancy.`
-      t1p2.innerText = 'Main';
-      t2p2.innerText = ' Business ';
-      t3p2.innerText = ' Interest';
-      p3h.innerText = English.index.section3.heading;
-      p3.innerHTML = ` <div class="font-bold">
+      Environmental Management System and Safety Management System training & Consultancy.`;
+    $("#t1-p2").innerText = "Main";
+    $("#t2-p2").innerText = " Business ";
+    $("#t3-p2").innerText = " Interest";
+    $("#p3-h").innerText = English.index.section3.heading;
+    $("#p3").innerHTML = ` <div class="font-bold">
       <span class="font-extrabold">ABoS</span>
      ${English.index.section3.description1}
      </div>
@@ -164,24 +168,20 @@ function toggleTranslate(lang) {
      <div class="font-bold ">
       <span class="font-extrabold">ABoS</span>
       ${English.index.section3.description2}
-     </div>`
-
-     p4.innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
+     </div>`;
+     $("#p4").innerHTML = `<div class=" lg:w-3/12 lg:px-3 ">
      <div class=" flex justify-center">
        <img src="../images/krane.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
       </div>
-      <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Office facilities</div>
+      <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${English.index.section3.subsections[0].title}</div>
       <div class="font-bold">
-       <div class=" text-center font-extrabold">
-         ABOS’s Abu Dhabi office 
+       <div class=" text-center text-xl font-extrabold">
+      في ابو ظبي  Abos مكتب </div>
+       <div class=" pl-5 lg:p-0 text-right">
+       ${English.index.section3.subsections[0].description1}
        </div>
-       <div class=" pl-5 lg:p-0">
-         located in the heart of the city & the operations will be handled at Mussafah offices to serve the clients at anytime during the business
-          hours. The communication
-           between the departments and personals are established through phone, e-mails, & verbal conversations.
-       </div>
-       <div class="mt-4 pl-5 lg:p-0">
-         All the Certificates and reports are generated by the engineers to avoid delays & errors to ensure the trust of the customer
+       <div class="mt-4 pl-5 lg:p-0 text-right">
+       ${English.index.section3.subsections[0].description2}
        </div>
       </div>
      </div>
@@ -189,45 +189,41 @@ function toggleTranslate(lang) {
        <div class=" flex justify-center">
          <img src="../images/green worker.jpeg" class="w-60 h-52  rounded-3xl" alt="abos">
         </div>
-        <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Work Experience</div>
-        <div class="font-bold  pl-5 lg:p-0">
-           We ABoS work with various prestigious projects with well reputed companies in UAE such as ADNATCO, NMDC, SMG, IMCC group (GPC, IMAC, GSME, CIC, ADCE), GS Engineering, Hyundai, Galfar Engineering, AL Sahraa. We can listed various projects which we handled by us on request
-         </div>
+        <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${English.index.section3.subsections[1].title}</div>
+        <div class="font-bold  pl-5 lg:p-0 text-right">
+        ${English.index.section3.subsections[1].description}
+        </div>
        </div>
        <div class=" lg:w-3/12 lg:px-3 ">
          <div class=" flex justify-center">
            <img src="../images/green_crane.png" class="w-60 h-52  rounded-3xl" alt="abos">
           </div>
-          <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Quality & HSE</div>
-          <div class="font-bold  pl-5 lg:p-0">
+          <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">${English.index.section3.subsections[2].title}</div>
+          <div class="font-bold  pl-5 lg:p-0 text-right">
          
-             ABoS is committed with High level of standardization with Quality & HSE. Our Company is certified by LEEA & ENAS for our inspection 
-             activities as per iso17020:2012 & our EHSMS system is recently certified by RINA Services for ISO14001:2004: ISO 18001:2007.
-           
+          ${English.index.section3.subsections[2].description}
+
           </div>
          </div>
          <div class=" lg:w-3/12 lg:px-3 ">
            <div class=" flex justify-center">
              <img src="../images/etihad.jpeg" class="w-60 h-52 rounded-3xl" alt="abos">
             </div>
-            <div class=" text-3xl font-bold text-center my-2" style="color: #024160;">Office facilities</div>
+            <div class=" text-3xl font-bold text-center my-2" style="color: #024160;"> ${English.index.section3.subsections[0].title}</div>
             <div class="font-bold">
-             <div class=" font-extrabold text-center">
-               ABOS’s Abu Dhabi office 
+            <div class=" text-center text-xl font-extrabold">
+            في ابو ظبي  Abos مكتب </div>
+             <div class=" pl-5 lg:p-0 text-right">
+             ${English.index.section3.subsections[0].description1}
+
              </div>
-             <div class=" pl-5 lg:p-0">
-               located in the heart of the city & the operations will be handled at Mussafah offices to serve the clients at anytime during the business
-                hours. The communication
-                 between the departments and personals are established through phone, e-mails, & verbal conversations.
-             </div>
-             <div class="mt-4  pl-5 lg:p-0">
-               All the Certificates and reports are generated by the engineers to avoid delays & errors to ensure the trust of the customer
+             <div class="mt-4  pl-5 lg:p-0 text-right">
+             ${English.index.section3.subsections[0].description2}
              </div>
             </div>
-           </div>`
+           </div>`;
 
-     p1about.innerHTML= English.about.section1.description;
-
+   //about Update content for English 
+    $("#p1-about").innerHTML = English.about.section1.description;
   }
 }
-
