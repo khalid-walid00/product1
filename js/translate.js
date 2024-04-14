@@ -8,6 +8,7 @@ window.onload = () => {
     const langStorage = JSON.parse(localStorage.getItem("lang"))
     const lang = langStorage.lang
     const location = window.location.pathname
+    console.log(location)
   if (lang == "ar") {
     $("#translate").style.transform =$("#translate-slide").style.transform = "translateX(2rem)";
    
@@ -19,7 +20,7 @@ window.onload = () => {
 }
 function updateArabic($, location) {
   updateArabicForNavBarAndSlider($);
-  location.includes("index") || location.includes("")
+  location.includes("index") || location=="/"
     ? updateArabicForIndex($)
     : location.includes("About")
     ? updateArabicForAbout($)
