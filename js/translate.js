@@ -1,6 +1,6 @@
 
-   function toggleTranslate(lang, location) {
-  localStorage.setItem("lang",JSON.stringify({lang:lang,location:location})); 
+   function toggleTranslate(lang) {
+  localStorage.setItem("lang",JSON.stringify({lang:lang})); 
   window.location.reload()
 }
 window.onload = () => {
@@ -9,12 +9,11 @@ window.onload = () => {
     const lang = langStorage.lang
     const location = window.location.pathname
   if (lang == "ar") {
-    $("#translate").style.transform = "translateX(2rem)";
-    $("#translate-slide").style.transform = "translateX(2rem)";
+    $("#translate").style.transform =$("#translate-slide").style.transform = "translateX(2rem)";
+   
     updateArabic($, location);
   } else {
-    $("#translate").style.transform = "translateX(0rem)";
-    $("#translate-slide").style.transform = "translateX(0rem)";
+    $("#translate").style.transform =$("#translate-slide").style.transform = "translateX(0rem)";
     updateEnglish($, location);
   }
 }
@@ -32,7 +31,8 @@ function updateArabic($, location) {
     ? updateArabicForApprovals($)
     : location.includes("Gallery")
     ? updateArabicForGallery($)
-    : updateArabicForContact($);
+    : location.includes("Contact")
+    ? updateArabicForContact($):""
 }
 
 function updateEnglish($, location) {
@@ -49,7 +49,8 @@ function updateEnglish($, location) {
   ? updateEnglishForApprovals($)
   : location.includes("Gallery")
   ? updateEnglishForGallery($)
-  : updateEnglishForContact($);
+  : location.includes("Contact")
+  ? updateEnglishForContact($):""
 }
 
 function updateArabicForNavBarAndSlider($) {
