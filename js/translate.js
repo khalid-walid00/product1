@@ -19,7 +19,7 @@ window.onload = () => {
 }
 function updateArabic($, location) {
   updateArabicForNavBarAndSlider($);
-  location.includes("index")
+  location.includes("index") || location.includes("")
     ? updateArabicForIndex($)
     : location.includes("About")
     ? updateArabicForAbout($)
