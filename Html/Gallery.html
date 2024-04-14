@@ -14,82 +14,100 @@
 
 <body class="overflow-x-hidden">
     <header class="sticky top-0 z-50">
-    <div class=" sticky top-0 z-50 items-center bg-white flex  justify-between lg:items-end ">
-        <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
-        <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
-            <nav class="lg:flex  justify-between ">
-                <a style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
-                <a style="color:#024160;" class="font-bold" href="./About.html">About us</a>
-                <a style="color:#024160;" class="font-bold" href="./Inspections.html">Inspections &
-                    Certifications</a>
-                <a style="color:#024160;" class="font-bold" href="./Training.html">Training</a>
-                <a style="color:#024160;" class="font-bold" href="./Approvals.html">Approval</a>
-                <a style="color:#6c6d6e;"  class="font-bold" href="#">Gallery</a>
-                <a style="color:#024160;" class="font-bold" href="./Contact.html">Contact us</a>
-            </nav>
 
-            <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
-                <div class=" lg:w-2/12 w-4/12 flex justify-between pt-6">
-                    <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-                    <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-                    <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-                    <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-                            class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+        <div class=" items-center bg-white flex  justify-between lg:items-end ">
+            <img src="../images/logo.jpeg" alt="Logo" class=" lg:w-3/12 sm:w-5/12 md:w-5/12  w-9/12 h-24 ">
+            <div class="lg:flex lg:flex-col hidden sm:hidden md:hidden  w-9/12 px-5">
+                <nav id="nav" class="lg:flex  justify-between ">
+                    <a id="profile" style="color:#024160;" class="font-bold" href="../index.html">Company Profile</a>
+                    <a id="about" style="color:#024160;" class="font-bold" href="./About.html">About us</a>
+                    <a id="inspections" style="color:#024160;" class="font-bold" href="./Inspections.html">Inspections &
+                        Certifications</a>
+                    <a id="training" style="color:#024160;" class="font-bold" href="./Training.html">Training</a>
+                    <a id="approval" style="color:#024160;" class="font-bold" href="./Approvals.html">Approval</a>
+                    <a id="gallery" style="color:#6c6d6e;" class="font-bold" href="#">Gallery</a>
+                    <a id="contact" style="color:#024160;" class="font-bold px-2" href="./Contact.html">Contact us</a>
+                </nav>
+
+                <div class="flex lg:justify-end sm:justify-end justify-start md:justify-end px-6">
+                    <div class=" lg:w-2/12 w-4/12 flex justify-between items-center pt-6">
+                        <div style="background-color: #11B5EA;"
+                            class=" w-16 relative rounded-3xl p-1 flex justify-between">
+                            <button onclick="toggleTranslate('en','gallery')"
+                                class=" bg-white w-6 rounded-full flex justify-center font-bold">AR</button>
+                            <div style="background-color: #11B5EA;"
+                                class=" absolute transition-all duration-300 w-6 h-6 rounded-2xl " id="translate"></div>
+                            <button onclick="toggleTranslate('ar','gallery')"
+                                class=" bg-white w-6 rounded-full flex justify-center font-bold">EN</button>
+                        </div>
+                        <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                        <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                        <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                                class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
+                    class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
+            </div>
         </div>
-        <div class=" flex justify-end  lg:hidden"><i style="color: #11B5EA;" onclick="toggleFunction()"
-                class="fa-solid cursor-pointer fa-bars text-3xl mx-5"></i>
-        </div>
-    </div>
-</header>
-   <slider>
-    <div class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
-        id="slidebar">
-        <div class=" w-11/12 flex justify-between pt-6">
-            <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
-            <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
-            <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
-            <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
-                    class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
-        </div>
+    </header>
 
-        <div class="my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
+    <slider>
+        <div class=" fixed  z-50 transition-all duration-300 ease-in-out top-24 h-screen w-56 -right-56 rounded-l-lg bg-gray-200"
+            id="slidebar">
+            <div class=" w-11/12 flex justify-between pt-6">
+                <div style="background-color: #11B5EA;" class=" w-16 relative rounded-3xl p-1 flex justify-between">
+                    <button onclick="toggleTranslate('en','gallery')"
+                        class=" bg-white w-6 rounded-full flex justify-center font-bold">AR</button>
+                    <div style="background-color: #11B5EA;"
+                        class=" absolute transition-all duration-300 w-6 h-6 rounded-2xl " id="translate-slide"></div>
+                    <button onclick="toggleTranslate('ar','gallery')"
+                        class=" bg-white w-6 rounded-full flex justify-center font-bold">EN</button>
+                </div>
+                <a class="mx-1" href="https://youtube.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-youtube"></i></a>
+                <a class="mx-1" href="https://instagram.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-instagram"></i></a>
+                <a class="mx-1" href="https://x.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-x-twitter"></i></a>
+                <a class="mx-1" href="https://facebook.com"><i style="color: #11B5EA;"
+                        class="fa-brands colorIcon text-2xl fa-facebook-f"></i></a>
+            </div>
+            <div class=" my-6 bg-blue-web  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="profile-slide" class="font-bold w-full  text-white flex" href="../index.html">Company Profile</a>
+            </div>
+            <div class="my-6  bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="about-slide" class="font-bold w-full  text-white flex" href="./About.html">About us</a>
 
-        </div>
-        <div  class=" my-6 bg-blue-web  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a class="font-bold w-full  text-white flex" href="#">About us</a>
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Inspections.html">Inspections &
-                Certifications</a>
+            </div>
+            <div class="bg-blue-web my-6 hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="inspections-slide" class="font-bold w-full text-white  flex"
+                    href="./Inspections.html">Inspections &
+                    Certifications</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Training.html">Training</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="training-slide" class="font-bold w-full text-white  flex" href="./Training.html">Training</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="approval-slide" class="font-bold w-full text-white  flex" href="./Approvals.html">Approval</a>
 
-        </div>
-        <div style="background-color:#034a90;" class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a st class="font-bold w-full text-white  flex" href="#">Gallery</a>
+            </div>
+            <div style="background-color:#034a90;"
+                class=" my-6  hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="gallery-slide" class="font-bold w-full text-white  flex" href="#">Gallery</a>
 
-        </div>
-        <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
-            <a  class="font-bold w-full text-white  flex" href="./Contact.html">Contact us</a>
+            </div>
+            <div class=" my-6 bg-blue-web hover:bg-blue-700 shadow-xl rounded-l-lg px-1 py-2 ml-1">
+                <a id="contact-slide" class="font-bold w-full text-white  flex" href="./Contact.html">Contact us</a>
 
+            </div>
         </div>
-    </div>
-</slider>
+    </slider>
 
 
     <section>
@@ -98,12 +116,14 @@
                 <div class=" flex lg:flex-row flex-col w-full  mt-12">
                     <div class="lg:w-6/12 flex flex-col items-center justify-center">
                         <img src="../images/boxing_crane.jpeg" alt="logo" class="lg:w-8/12 h-96 rounded-3xl " />
-                        <div class=" text-2xl text-center font-bold my-3 color-blue-1000">ADNOC Vessel mid ship crane
+                        <div id="t1-gallery" class=" text-2xl text-center font-bold my-3 color-blue-1000">ADNOC Vessel
+                            mid ship crane
                             load testing</div>
                     </div>
                     <div class="lg:w-6/12 flex flex-col items-center justify-center">
                         <img src="../images/500ton.jpeg" alt="logo" class="lg:w-8/12 h-96 rounded-3xl " />
-                        <div class=" text-2xl text-center font-bold my-3 color-blue-1000">Proof load testing of lifting
+                        <div id="t2-gallery" class=" text-2xl text-center font-bold my-3 color-blue-1000">Proof load
+                            testing of lifting
                             frame 500 ton </div>
                     </div>
                 </div>
@@ -119,18 +139,23 @@
         <div class=" mt-5 relative section2-galley">
             <div class="flex flex-col  z-30">
                 <div class="flex justify-center  z-30">
-                    <div class="w-10/12 text-2xl color-blue-1000 font-bold">Arena trusses load tested in MENA region
+                    <div id="h2-gallery" class="w-10/12 text-2xl color-blue-1000 font-bold">Arena trusses load tested in
+                        MENA region
                     </div>
                 </div>
                 <div class=" flex lg:flex-row md:flex-row sm:flex-row flex-col w-full  mt-12  z-30">
                     <div class="lg:w-6/12 md:w-6/12 sm:w-6/12 w-full flex flex-col items-center ">
-                        <img src="../images/boxing_crane.jpeg" alt="logo" class="lg:w-8/12 md:w-8/12 sm:w-8/12 w-7/12 lg:h-4/6 md:h-4/6 sm:h-4/6 h-2/6 rounded-3xl " />
-                        <div class=" lg:text-2xl text-xl text-center font-bold my-3 color-blue-1000">ADNOC Vessel embarkation
+                        <img src="../images/boxing_crane.jpeg" alt="logo"
+                            class="lg:w-8/12 md:w-8/12 sm:w-8/12 w-7/12 lg:h-4/6 md:h-4/6 sm:h-4/6 h-2/6 rounded-3xl " />
+                        <div id="t3-gallery" class=" lg:text-2xl text-xl text-center font-bold my-3 color-blue-1000">
+                            ADNOC Vessel embarkation
                             ladder load testing</div>
                     </div>
                     <div class="lg:w-6/12 md:w-6/12 sm:w-6/12 w-full flex flex-col items-center  z-30">
-                        <img src="../images/500ton.jpeg" alt="logo" class="lg:w-8/12 md:w-8/12 sm:w-8/12 w-7/12  lg:h-4/6 md:h-4/6 sm:h-4/6 h-2/6 rounded-3xl " />
-                        <div class=" lg:text-2xl text-xl text-center font-bold my-3 color-blue-1000">Air craft docking platform
+                        <img src="../images/500ton.jpeg" alt="logo"
+                            class="lg:w-8/12 md:w-8/12 sm:w-8/12 w-7/12  lg:h-4/6 md:h-4/6 sm:h-4/6 h-2/6 rounded-3xl " />
+                        <div id="t4-gallery" class=" lg:text-2xl text-xl text-center font-bold my-3 color-blue-1000">Air
+                            craft docking platform
                             load testing</div>
                     </div>
                 </div>
@@ -141,21 +166,28 @@
                 style="border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
                 <div class=" flex justify-center flex-row">
                     <div class=" w-10/12 flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between">
-                        <div class="w-5/12 lg:text-4xl md:text-2xl sm:text-2xl text-xl flex items-center color-blue-1000 font-bold">For Testing <br>Please Contact us</div>
-                        <div class="w-7/12 flex justify-center"> 
+                        <div id="t5-gallery"
+                            class="w-5/12 lg:text-4xl md:text-2xl sm:text-2xl text-xl flex items-center color-blue-1000 font-bold">
+                            For Testing <br>Please Contact us</div>
+                        <div class="w-7/12 flex justify-center">
 
-                            <div class=" border-l-2 flex flex-col justify-between  my-2 p-0" style="border-color: #024160;">
+                            <div class=" border-l-2 flex flex-col justify-between  my-2 p-0"
+                                style="border-color: #024160;">
                                 <div class=" flex font-medium items-center lg:text-xl md:text-lg sm:text-lg text-base">
-                                    <i class="fa-solid fa-location-dot mx-2 flex color-blue-1000 text-1xl"></i> Arabian Bureau of Services
+                                    <i class="fa-solid fa-location-dot mx-2 flex color-blue-1000 text-1xl"></i> Arabian
+                                    Bureau of Services
                                 </div>
                                 <div class=" flex font-medium items-center lg:text-xl md:text-lg sm:text-lg text-base">
-                                    <i class="fa-solid fa-envelope-open mx-2 flex color-blue-1000 text-1xl"></i> P.O.Box 47133 - Musaffah
+                                    <i class="fa-solid fa-envelope-open mx-2 flex color-blue-1000 text-1xl"></i> P.O.Box
+                                    47133 - Musaffah
                                 </div>
                                 <div class=" flex font-medium items-center lg:text-xl md:text-lg sm:text-lg text-base">
-                                    <i class="fa-solid fa-phone mx-2 flex color-blue-1000 text-1xl"></i> Tel: +971 2 5511520
+                                    <i class="fa-solid fa-phone mx-2 flex color-blue-1000 text-1xl"></i> Tel: +971 2
+                                    5511520
                                 </div>
                                 <div class=" flex font-medium items-center lg:text-xl md:text-lg sm:text-lg text-base">
-                                    <i class="fa-solid fa-envelope mx-2 flex color-blue-1000 text-1xl"></i> Email: abos@abosad.com
+                                    <i class="fa-solid fa-envelope mx-2 flex color-blue-1000 text-1xl"></i> Email:
+                                    abs@abosad.com
                                 </div>
 
                             </div>
@@ -172,24 +204,37 @@
     <footer>
         <div class="h-max lg:p-20" style="background-color: #024160;">
             <div class=" flex  justify-around flex-wrap">
-                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
-                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
-                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
-                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
-                    </div>
-                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
-                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
-                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                <div class="lg:w-7/12 w-5/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-11/12 w-full lg:flex lg:justify-around lg:m-0 my-2">
+                        <div class="w-6/12 lg:flex justify-around">
+                            <a href="../index.html" id="link1"
+                                class="font-bold flex flex-nowrap text-nowrap  lg:m-0   lg:text-xl capitalize"
+                                style="color: #11B5EA;">Company Profile</a>
+                            <a href="./Html/About.html" id="link2"
+                                class="font-bold flex  lg:m-0 lg:text-xl lg:mx-2 capitalize"
+                                style="color: #11B5EA;">About </a>
+                        </div>
+                        <div class="lg:w-6/12 flex lg:justify-around">
+                            <a href="./Html/Inspections.html" id="link3"
+                                class="font-bold flex lg:m-0 lg:mx-3  lg:text-xl capitalize"
+                                style="color: #11B5EA;">Inspections & Certifications </a>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:w-6/12 w-4/12 justify-between sm:flex md:flex">
-                    <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
-                        <a class="font-bold mx-2 lg:m-0   lg:text-xl capitalize" style="color: #11B5EA;">Training</a>
-                        <a class="font-bold mx-2 lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals </a>
+                <div class="lg:w-5/12 w-3/12 justify-between sm:flex md:flex">
+                    <div class="lg:w-6/12 lg:flex lg:justify-around lg:m-0 my-2">
+                        <a href="./Html/Training.html" id="link4" class="font-bold mx-2 lg:m-0   lg:text-xl capitalize"
+                            style="color: #11B5EA;">Training</a>
+                        <a href="./Html/Approvals.html" id="link5"
+                            class="font-bold mx-2 flex lg:m-0 lg:text-xl capitalize" style="color: #11B5EA;">Approvals
+                        </a>
                     </div>
                     <div class="lg:w-6/12 w-12/12 lg:flex lg:justify-around lg:m-0 my-2">
-                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Gallery </a>
-                        <a class="font-bold mx-2 lg:m-0  lg:text-xl capitalize" style="color: #11B5EA;">Contact </a>
+                        <a href="#" id="link6" class="font-bold mx-2 lg:m-0   lg:text-xl capitalize"
+                            style="color: #11B5EA;">Gallery </a>
+                        <a href="./Html/Contact.html" id="link7"
+                            class="flex   font-bold mx-5  md:m-0  sm:m-0 lg:m-0  lg:text-xl capitalize"
+                            style="color: #11B5EA;">Contact </a>
                     </div>
                 </div>
             </div>
@@ -226,7 +271,7 @@
                         <div class=" flex items-center text-white lg:text-2xl my-2">
                             <i class="fa-solid fa-envelope mx-2"></i>
                             <div>
-                                Email: abos@abosad.com
+                                Email: abs@abosad.com
                             </div>
                         </div>
 
@@ -248,6 +293,9 @@
     </footer>
 
     <script src="../js/slideBar.js"></script>
+    <script src="../js/translate.js"></script>
+    <script src="../translate/English.js"></script>
+    <script src="../translate/Arabic.js"></script>
 </body>
 
 </html>
